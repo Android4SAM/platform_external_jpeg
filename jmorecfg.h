@@ -332,10 +332,13 @@ typedef int boolean;
  *    is not 3 (they don't understand about dummy color components!).  So you
  *    can't use color quantization if you change that value.
  */
-
-#define RGB_RED		0	/* Offset of Red in an RGB scanline element */
+/*
+ * Change by embest
+ * We need to support our hardware format
+ */
+#define RGB_RED		2	/* Offset of Red in an RGB scanline element */
 #define RGB_GREEN	1	/* Offset of Green */
-#define RGB_BLUE	2	/* Offset of Blue */
+#define RGB_BLUE	0	/* Offset of Blue */
 #ifdef ANDROID_RGB
 #define RGB_ALPHA   3   /* Offset of Alpha */
 #endif
