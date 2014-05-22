@@ -903,7 +903,7 @@ asm_function jsimd_ycc_\colorid\()_convert_neon
 .endm
 
 /*--------------------------------- id ----- bpp R  G  B */
-generate_jsimd_ycc_rgb_convert_neon rgba8888, 32, 0, 1, 2
+generate_jsimd_ycc_rgb_convert_neon rgba8888, 32, 2, 1, 0
 generate_jsimd_ycc_rgb_convert_neon rgb565,  16, 0, 1, 2
 
 
